@@ -75,7 +75,9 @@
         <!-- Web Development -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <div class="wf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+            <div class="wf-visual">
+              <img src="/img/eco-web.png" alt="Web Dev 3D" class="wf-3d-img">
+            </div>
             <h3>Web Development</h3>
             <ul class="wf-list">
               <li>Landing Pages</li>
@@ -87,7 +89,9 @@
         <!-- Marketing -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <div class="wf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"></path><polyline points="17 6 23 6 23 12"></polyline></svg></div>
+            <div class="wf-visual">
+              <img src="/img/eco-marketing.png" alt="Marketing 3D" class="wf-3d-img">
+            </div>
             <h3>Marketing</h3>
             <ul class="wf-list">
               <li>Meta & Google Ads</li>
@@ -99,7 +103,9 @@
         <!-- Design -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <div class="wf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.5 1.5"></path><path d="M7.08 22.5c-.77.13-1.54.19-2.31.19-1.54 0-3.08-.25-4.62-.75.77-.38 1.54-1.03 2.18-1.93.64-.9 1-1.92 1.09-3.07.09-1.15-.09-2.31-.55-3.46"></path></svg></div>
+            <div class="wf-visual">
+              <img src="/img/eco-design.png" alt="Design 3D" class="wf-3d-img">
+            </div>
             <h3>Design</h3>
             <ul class="wf-list">
               <li>UI/UX Premium</li>
@@ -111,7 +117,9 @@
         <!-- Software -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <div class="wf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+            <div class="wf-visual">
+              <img src="/img/eco-software.png" alt="Software 3D" class="wf-3d-img">
+            </div>
             <h3>Software Dev</h3>
             <ul class="wf-list">
               <li>Custom ERPs</li>
