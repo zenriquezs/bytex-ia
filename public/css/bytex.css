@@ -729,8 +729,10 @@ h6 {
 }
 
 .service-list-item.active .sli-icon {
-  background: #fff;
-  color: #000;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--accent-blue);
+  border-color: var(--accent-blue);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
   transform: scale(1.1);
 }
 
@@ -2186,7 +2188,94 @@ h6 {
   opacity: 0.6;
 }
 
-/* --- Footer --- */
+/* --- Conversion Pulse Visual --- */
+.conversion-pulse {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pulse-stat {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1;
+  margin-bottom: 5px;
+  background: linear-gradient(to bottom, #fff, rgba(255,255,255,0.5));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.pulse-label {
+  font-size: 0.9rem;
+  color: var(--accent-blue);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.growth-graph {
+  margin-top: 30px;
+  height: 80px;
+  position: relative;
+  overflow: hidden;
+}
+
+.graph-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, var(--accent-blue));
+  mask: url("data:image/svg+xml,%3Csvg width='300' height='100' viewBox='0 0 300 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 80C50 80 70 20 120 20C170 20 200 60 250 10C280 -20 300 10 300 10' stroke='black' stroke-width='3'/%3E%3C/svg%3E") no-repeat center;
+  mask-size: cover;
+  animation: graphFlow 2s infinite alternate;
+}
+
+@keyframes graphFlow {
+  from { opacity: 0.4; }
+  to { opacity: 1; filter: drop-shadow(0 0 10px var(--accent-blue)); }
+}
+
+.conversion-notif {
+  position: absolute;
+  right: 20px;
+  top: 40px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  backdrop-filter: blur(10px);
+  animation: notifFloat 4s infinite;
+}
+
+@keyframes notifFloat {
+  0%, 100% { transform: translateY(0) scale(1); opacity: 0; }
+  10%, 90% { opacity: 1; }
+  50% { transform: translateY(-10px) scale(1.05); }
+}
+
+.notif-dot {
+  width: 8px;
+  height: 8px;
+  background: #00ff88;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #00ff88;
+}
+
+.notif-text {
+  font-size: 0.75rem;
+  color: #fff;
+}
 .footer {
   padding: 60px 0 32px;
   border-top: 1px solid var(--border-glass);

@@ -157,12 +157,17 @@
       
       <!-- Landing Pages Visual -->
       <div class="mock-body" x-show="active === 0" x-transition.opacity.duration.400ms>
-        <div class="video-preview-container" style="height: 100%; width: 100%; border-radius: 8px; overflow: hidden; background: #000;">
-          <video autoplay muted loop playsinline style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8;">
-            <source src="/img/web-build.mp4" type="video/mp4">
-          </video>
-          <div class="video-overlay-text" style="position: absolute; bottom: 20px; left: 20px; font-family: 'Space Grotesk'; font-size: 0.8rem; color: #fff; background: rgba(0,0,0,0.5); padding: 5px 12px; border-radius: 4px; border-left: 3px solid var(--accent-blue);">
-            Desarrollando Landing de Alto Impacto...
+        <div class="conversion-pulse">
+          <div class="pulse-stat">+324%</div>
+          <div class="pulse-label">Crecimiento en Leads</div>
+          
+          <div class="growth-graph">
+            <div class="graph-line"></div>
+          </div>
+
+          <div class="conversion-notif">
+            <div class="notif-dot"></div>
+            <div class="notif-text">Nuevo Lead Calificado</div>
           </div>
         </div>
       </div>
