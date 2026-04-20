@@ -72,87 +72,54 @@
 
     <div class="showcase-workflow-container reveal">
       <div class="workflow-top-row">
-        <!-- Web Development -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <div class="wf-visual">
-              <img src="/img/eco-web.png" alt="Web Dev 3D" class="wf-3d-img">
-            </div>
-            <h3>Web Development</h3>
-            <ul class="wf-list">
-              <li>Landing Pages</li>
-              <li>SEO & Speed</li>
-            </ul>
-            <div class="wf-status status-blue">Optimizing...</div>
+            <span>Web Development</span>
           </div>
         </div>
-        <!-- Marketing -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <div class="wf-visual">
-              <img src="/img/eco-marketing.png" alt="Marketing 3D" class="wf-3d-img">
-            </div>
-            <h3>Marketing</h3>
-            <ul class="wf-list">
-              <li>Meta & Google Ads</li>
-              <li>Lead Gen</li>
-            </ul>
-            <div class="wf-status status-green">Campaign Live</div>
+            <span>Marketing</span>
           </div>
         </div>
-        <!-- Design -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <div class="wf-visual">
-              <img src="/img/eco-design.png" alt="Design 3D" class="wf-3d-img">
-            </div>
-            <h3>Design</h3>
-            <ul class="wf-list">
-              <li>UI/UX Premium</li>
-              <li>Brand Identity</li>
-            </ul>
-            <div class="wf-status status-purple">Reviewing</div>
+            <span>Design</span>
           </div>
         </div>
-        <!-- Software -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <div class="wf-visual">
-              <img src="/img/eco-software.png" alt="Software 3D" class="wf-3d-img">
-            </div>
-            <h3>Software Dev</h3>
-            <ul class="wf-list">
-              <li>Custom ERPs</li>
-              <li>API Integration</li>
-            </ul>
-            <div class="wf-status status-orange">Deploying</div>
+            <span>Software Development</span>
           </div>
         </div>
       </div>
 
       <div class="workflow-svg-wrap">
         <svg viewBox="0 0 1000 160" preserveAspectRatio="none">
+          <!-- Main horizontal bus -->
           <path class="wf-line-bg" d="M 125 0 V 80 H 875 V 0 M 500 80 V 160" />
+          <!-- Individual vertical lines from cards -->
+          <path class="wf-line" d="M 125 0 V 80" />
+          <path class="wf-line" d="M 375 0 V 80" />
+          <path class="wf-line" d="M 625 0 V 80" />
+          <path class="wf-line" d="M 875 0 V 80" />
+          <!-- Connecting horizontal line -->
+          <path class="wf-line" d="M 125 80 H 875" />
+          <!-- Final line down to business -->
+          <path class="wf-line" d="M 500 80 V 160" />
           
-          <!-- Moving Dots (Data Packets) -->
-          <circle r="4" fill="#ffffff" class="wf-dot">
+          <!-- Animated pulse dots -->
+          <circle r="3" fill="#fff" class="wf-pulse">
             <animateMotion dur="3s" repeatCount="indefinite" path="M 125 0 V 80 H 500 V 160" />
           </circle>
-          <circle r="4" fill="#ffffff" class="wf-dot">
-            <animateMotion dur="4s" repeatCount="indefinite" path="M 375 0 V 80 H 500 V 160" />
-          </circle>
-          <circle r="4" fill="#ffffff" class="wf-dot">
-            <animateMotion dur="3.5s" repeatCount="indefinite" path="M 625 0 V 80 H 500 V 160" />
-          </circle>
-          <circle r="4" fill="#ffffff" class="wf-dot">
-            <animateMotion dur="4.2s" repeatCount="indefinite" path="M 875 0 V 80 H 500 V 160" />
+          <circle r="3" fill="#fff" class="wf-pulse">
+            <animateMotion dur="3.5s" repeatCount="indefinite" path="M 875 0 V 80 H 500 V 160" />
           </circle>
         </svg>
       </div>
 
       <div class="workflow-footer">
         <div class="business-node">
-          <div class="pulse-ring"></div>
           <div class="node-icon">+</div>
           <span>Your Business</span>
         </div>

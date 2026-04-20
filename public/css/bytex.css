@@ -1234,8 +1234,15 @@ h6 {
 }
 
 @keyframes pulseRing {
-  0% { transform: translate(-50%, -50%) scale(0.95); opacity: 1; }
-  100% { transform: translate(-50%, -50%) scale(1.5); opacity: 0; }
+  0% {
+    transform: translate(-50%, -50%) scale(0.95);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0;
+  }
 }
 
 .showcase-workflow-container {
@@ -1275,8 +1282,11 @@ h6 {
 .wf-card::before {
   content: '';
   position: absolute;
-  top: 0; left: 0; width: 100%; height: 100%;
-  background: radial-gradient(circle at 50% 0%, rgba(255,255,255,0.05), transparent);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 0%, rgba(255, 255, 255, 0.05), transparent);
   pointer-events: none;
 }
 
@@ -1312,8 +1322,15 @@ h6 {
 }
 
 @keyframes float3D {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-10px); }
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
 }
 
 .wf-card h3 {
@@ -1341,8 +1358,10 @@ h6 {
 .wf-list li::before {
   content: '';
   position: absolute;
-  left: 0; top: 7px;
-  width: 4px; height: 4px;
+  left: 0;
+  top: 7px;
+  width: 4px;
+  height: 4px;
   background: var(--accent-blue);
   border-radius: 50%;
 }
@@ -1359,10 +1378,25 @@ h6 {
   width: fit-content;
 }
 
-.status-blue { color: #00d4ff; background: rgba(0, 212, 255, 0.1); }
-.status-green { color: #00ff88; background: rgba(0, 255, 136, 0.1); }
-.status-purple { color: #bf5af2; background: rgba(191, 90, 242, 0.1); }
-.status-orange { color: #ff9f0a; background: rgba(255, 159, 10, 0.1); }
+.status-blue {
+  color: #00d4ff;
+  background: rgba(0, 212, 255, 0.1);
+}
+
+.status-green {
+  color: #00ff88;
+  background: rgba(0, 255, 136, 0.1);
+}
+
+.status-purple {
+  color: #bf5af2;
+  background: rgba(191, 90, 242, 0.1);
+}
+
+.status-orange {
+  color: #ff9f0a;
+  background: rgba(255, 159, 10, 0.1);
+}
 
 .workflow-svg-wrap {
   height: 160px;
@@ -1393,7 +1427,9 @@ h6 {
 }
 
 @keyframes lineDash {
-  to { stroke-dashoffset: -1000; }
+  to {
+    stroke-dashoffset: -1000;
+  }
 }
 
 .wf-dot {
@@ -1764,7 +1800,8 @@ h6 {
   bottom: 0;
   width: 2px;
   background: rgba(255, 255, 255, 0.05);
-  z-index: 0; /* Changed from -1 to 0 */
+  z-index: 0;
+  /* Changed from -1 to 0 */
 }
 
 .timeline::after {
@@ -1777,7 +1814,8 @@ h6 {
   background: linear-gradient(to bottom, transparent, var(--accent-blue), #ffffff);
   box-shadow: 0 0 15px var(--accent-blue);
   transition: height 0.1s ease;
-  z-index: 1; /* Keep at 1 */
+  z-index: 1;
+  /* Keep at 1 */
 }
 
 .timeline-item {
@@ -1785,7 +1823,8 @@ h6 {
   gap: 32px;
   padding-bottom: 48px;
   position: relative;
-  z-index: 5; /* Higher than the line (1) */
+  z-index: 5;
+  /* Higher than the line (1) */
 }
 
 .timeline-dot {
@@ -1793,7 +1832,8 @@ h6 {
   height: 40px;
   min-width: 40px;
   border-radius: 50%;
-  background: #000; /* Solid black to cover the line */
+  background: #000;
+  /* Solid black to cover the line */
   border: 1px solid rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
@@ -2338,7 +2378,7 @@ h6 {
   color: #fff;
   line-height: 1;
   margin-bottom: 5px;
-  background: linear-gradient(to bottom, #fff, rgba(255,255,255,0.5));
+  background: linear-gradient(to bottom, #fff, rgba(255, 255, 255, 0.5));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2371,8 +2411,14 @@ h6 {
 }
 
 @keyframes graphFlow {
-  from { opacity: 0.4; }
-  to { opacity: 1; filter: drop-shadow(0 0 10px var(--accent-blue)); }
+  from {
+    opacity: 0.4;
+  }
+
+  to {
+    opacity: 1;
+    filter: drop-shadow(0 0 10px var(--accent-blue));
+  }
 }
 
 .conversion-notif {
@@ -2391,9 +2437,21 @@ h6 {
 }
 
 @keyframes notifFloat {
-  0%, 100% { transform: translateY(0) scale(1); opacity: 0; }
-  10%, 90% { opacity: 1; }
-  50% { transform: translateY(-10px) scale(1.05); }
+
+  0%,
+  100% {
+    transform: translateY(0) scale(1);
+    opacity: 0;
+  }
+
+  10%,
+  90% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: translateY(-10px) scale(1.05);
+  }
 }
 
 .notif-dot {
@@ -2408,6 +2466,7 @@ h6 {
   font-size: 0.75rem;
   color: #fff;
 }
+
 .footer {
   padding: 60px 0 32px;
   border-top: 1px solid var(--border-glass);
@@ -2793,8 +2852,13 @@ h6 {
 }
 
 @keyframes marquee {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(calc(-50% - 15px)); }
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-50% - 15px));
+  }
 }
 
 .testimonial-avatar {
