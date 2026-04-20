@@ -72,54 +72,79 @@
 
     <div class="showcase-workflow-container reveal">
       <div class="workflow-top-row">
+        <!-- Web Development -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <span>Web Development</span>
+            <div class="wf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg></div>
+            <h3>Web Development</h3>
+            <ul class="wf-list">
+              <li>Landing Pages</li>
+              <li>SEO & Speed</li>
+            </ul>
+            <div class="wf-status status-blue">Optimizing...</div>
           </div>
         </div>
+        <!-- Marketing -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <span>Marketing</span>
+            <div class="wf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 6l-9.5 9.5-5-5L1 18"></path><polyline points="17 6 23 6 23 12"></polyline></svg></div>
+            <h3>Marketing</h3>
+            <ul class="wf-list">
+              <li>Meta & Google Ads</li>
+              <li>Lead Gen</li>
+            </ul>
+            <div class="wf-status status-green">Campaign Live</div>
           </div>
         </div>
+        <!-- Design -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <span>Design</span>
+            <div class="wf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19l7-7 3 3-7 7-3-3z"></path><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"></path><path d="M2 2l7.5 1.5"></path><path d="M7.08 22.5c-.77.13-1.54.19-2.31.19-1.54 0-3.08-.25-4.62-.75.77-.38 1.54-1.03 2.18-1.93.64-.9 1-1.92 1.09-3.07.09-1.15-.09-2.31-.55-3.46"></path></svg></div>
+            <h3>Design</h3>
+            <ul class="wf-list">
+              <li>UI/UX Premium</li>
+              <li>Brand Identity</li>
+            </ul>
+            <div class="wf-status status-purple">Reviewing</div>
           </div>
         </div>
+        <!-- Software -->
         <div class="wf-card">
           <div class="wf-card-inner">
-            <span>Software Development</span>
+            <div class="wf-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg></div>
+            <h3>Software Dev</h3>
+            <ul class="wf-list">
+              <li>Custom ERPs</li>
+              <li>API Integration</li>
+            </ul>
+            <div class="wf-status status-orange">Deploying</div>
           </div>
         </div>
       </div>
 
       <div class="workflow-svg-wrap">
         <svg viewBox="0 0 1000 160" preserveAspectRatio="none">
-          <!-- Main horizontal bus -->
           <path class="wf-line-bg" d="M 125 0 V 80 H 875 V 0 M 500 80 V 160" />
-          <!-- Individual vertical lines from cards -->
-          <path class="wf-line" d="M 125 0 V 80" />
-          <path class="wf-line" d="M 375 0 V 80" />
-          <path class="wf-line" d="M 625 0 V 80" />
-          <path class="wf-line" d="M 875 0 V 80" />
-          <!-- Connecting horizontal line -->
-          <path class="wf-line" d="M 125 80 H 875" />
-          <!-- Final line down to business -->
-          <path class="wf-line" d="M 500 80 V 160" />
           
-          <!-- Animated pulse dots -->
-          <circle r="3" fill="#fff" class="wf-pulse">
+          <!-- Moving Dots (Data Packets) -->
+          <circle r="4" fill="var(--accent-blue)" class="wf-dot">
             <animateMotion dur="3s" repeatCount="indefinite" path="M 125 0 V 80 H 500 V 160" />
           </circle>
-          <circle r="3" fill="#fff" class="wf-pulse">
-            <animateMotion dur="3.5s" repeatCount="indefinite" path="M 875 0 V 80 H 500 V 160" />
+          <circle r="4" fill="var(--accent-blue)" class="wf-dot">
+            <animateMotion dur="4s" repeatCount="indefinite" path="M 375 0 V 80 H 500 V 160" />
+          </circle>
+          <circle r="4" fill="var(--accent-blue)" class="wf-dot">
+            <animateMotion dur="3.5s" repeatCount="indefinite" path="M 625 0 V 80 H 500 V 160" />
+          </circle>
+          <circle r="4" fill="var(--accent-blue)" class="wf-dot">
+            <animateMotion dur="4.2s" repeatCount="indefinite" path="M 875 0 V 80 H 500 V 160" />
           </circle>
         </svg>
       </div>
 
       <div class="workflow-footer">
         <div class="business-node">
+          <div class="pulse-ring"></div>
           <div class="node-icon">+</div>
           <span>Your Business</span>
         </div>
