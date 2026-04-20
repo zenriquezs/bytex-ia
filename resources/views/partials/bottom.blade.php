@@ -135,16 +135,16 @@
           <path class="wf-line-bg" d="M 125 0 V 80 H 875 V 0 M 500 80 V 160" />
           
           <!-- Moving Dots (Data Packets) -->
-          <circle r="4" fill="var(--accent-blue)" class="wf-dot">
+          <circle r="4" fill="#ffffff" class="wf-dot">
             <animateMotion dur="3s" repeatCount="indefinite" path="M 125 0 V 80 H 500 V 160" />
           </circle>
-          <circle r="4" fill="var(--accent-blue)" class="wf-dot">
+          <circle r="4" fill="#ffffff" class="wf-dot">
             <animateMotion dur="4s" repeatCount="indefinite" path="M 375 0 V 80 H 500 V 160" />
           </circle>
-          <circle r="4" fill="var(--accent-blue)" class="wf-dot">
+          <circle r="4" fill="#ffffff" class="wf-dot">
             <animateMotion dur="3.5s" repeatCount="indefinite" path="M 625 0 V 80 H 500 V 160" />
           </circle>
-          <circle r="4" fill="var(--accent-blue)" class="wf-dot">
+          <circle r="4" fill="#ffffff" class="wf-dot">
             <animateMotion dur="4.2s" repeatCount="indefinite" path="M 875 0 V 80 H 500 V 160" />
           </circle>
         </svg>
